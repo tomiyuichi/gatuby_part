@@ -7,6 +7,18 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+// module.exports = {
+//   plugins: [],
+// }
+
 module.exports = {
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
 }
